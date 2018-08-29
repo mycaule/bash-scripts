@@ -90,9 +90,18 @@ MAILTO="you.name@domain.com"
 0 17 * * 1-5 jira worklogadd XXX-20 6 <subject> && curl -fsS --retry 3 https://hchk.io/<uuid> > /dev/null
 ```
 
+#### Programming
+
+...
+
 #### References
 
 - https://github.com/agarrharr/awesome-cli-apps
 - https://github.com/alebcay/awesome-shell
 - [The 4-hour workweek](https://www.goodreads.com/book/show/368593.The_4_Hour_Workweek)
 - [Common CRON mistakes](http://www.alleft.com/sysadmin/common-cron-mistakes/)
+
+#### TODO
+
+- [ ] Add unit tests using [bats](https://github.com/sstephenson/bats)
+- [ ] Add more stuff
