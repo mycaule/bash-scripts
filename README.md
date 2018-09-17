@@ -94,6 +94,20 @@ MAILTO="you.name@domain.com"
 
 ...
 
+#### Docker Setup
+
+```bash
+sudo curl -sSL https://get.docker.com/ | sh
+sudo usermod -aG docker michel
+```
+
+##### RocksDB ldb
+
+```bash
+docker pull arschles/rocksdb-ldb
+docker run -v $PWD:/pwd -w /pwd arschles/rocksdb-ldb /rocksdb/tools/ldb --db=. scan
+```
+
 #### References
 
 - https://github.com/agarrharr/awesome-cli-apps
