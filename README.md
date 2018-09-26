@@ -101,6 +101,13 @@ sudo curl -sSL https://get.docker.com/ | sh
 sudo usermod -aG docker michel
 ```
 
+```bash
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
+```
+
 ##### RocksDB ldb
 
 ```bash
