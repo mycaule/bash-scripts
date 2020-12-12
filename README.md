@@ -8,21 +8,29 @@ Focuses on minimalism and productivity.
 
 #### CLI Tools
 
-- [franz](https://github.com/meetfranz/franz)
-- [postman](https://www.getpostman.com)
-- [httpie](https://httpie.org)
-- [jq](https://stedolan.github.io/jq/)
-- [git-standup](https://github.com/kamranahmedse/git-standup)
-- [slack-cli](https://github.com/candrholdings/slack-cli)
-- [jira-cmd](https://github.com/germanrcuriel/jira-cmd)
-- [ncdu](https://dev.yorhel.nl/ncdu)
-- [ncdu-s3](https://github.com/EverythingMe/ncdu-s3)
-- [puppeteer](https://github.com/GoogleChrome/puppeteer)
-- [ngrok](https://ngrok.com)
+- [`aws-cli`](https://github.com/aws/aws-cli)
+- [`awslogs`](https://github.com/jorgebastida/awslogs)
+- [`aws-shell`](https://github.com/awslabs/aws-shell)
+- [`csvkit`](https://github.com/wireservice/csvkit)
+- [`httpie`](https://httpie.org)
+- [`franz`](https://github.com/meetfranz/franz)
+- [`postman`](https://www.getpostman.com)
+- [`httpie`](https://httpie.org)
+- [`jq`](https://stedolan.github.io/jq/)
+- [`git-standup`](https://github.com/kamranahmedse/git-standup)
+- [`jira-cmd`](https://github.com/germanrcuriel/jira-cmd)
+- [`ncdu`](https://dev.yorhel.nl/ncdu)
+- [`ncdu-s3`](https://github.com/EverythingMe/ncdu-s3)
+- [`puppeteer`](https://github.com/GoogleChrome/puppeteer)
+- [`ngrok`](https://ngrok.com)
+- [`socat`](https://github.com/craSH/socat)
+- [`hub`](https://github.com/github/hub)
+[`mssql-tools`](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools?- view=sql-server-2017)
+- [`psql`](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-from-psql.html)
 
 #### Slack automation
 
-...
+- [`slack-cli`](https://github.com/candrholdings/slack-cli)
 
 #### Git Functions
 
@@ -115,12 +123,26 @@ docker pull arschles/rocksdb-ldb
 docker run -v $PWD:/pwd -w /pwd arschles/rocksdb-ldb /rocksdb/tools/ldb --db=. scan
 ```
 
+##### Monitoring
+
+```sh
+$ crontab -l
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/home/michel/.local/bin/:/home/michel/Scripts/monitoring
+
+0 9,13,18 * * 1-5 healthchecks.sh
+0 9,13 * * 1-5 wakeup.sh
+```
+
 #### References
 
 - https://github.com/agarrharr/awesome-cli-apps
 - https://github.com/alebcay/awesome-shell
 - [The 4-hour workweek](https://www.goodreads.com/book/show/368593.The_4_Hour_Workweek)
 - [Common CRON mistakes](http://www.alleft.com/sysadmin/common-cron-mistakes/)
+- [Slack API - Attaching content and links to message](https://api.slack.com/docs/message-attachments)
+- Bash stuff : [crontab guru](https://crontab.guru), [SO #869589](https://stackoverflow.com/questions/869589)
+- [SO #3004811](https://stackoverflow.com/questions/3004811), [SE #230673](https://unix.stackexchange.com/questions/230673)
 
 #### TODO
 
