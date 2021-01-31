@@ -25,7 +25,7 @@ Focuses on minimalism and productivity.
 - [`ngrok`](https://ngrok.com)
 - [`socat`](https://github.com/craSH/socat)
 - [`hub`](https://github.com/github/hub)
-- [`mssql-tools`](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools?- view=sql-server-2017)
+- [`mssql-tools`](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools)
 - [`psql`](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-from-psql.html)
 
 #### Slack automation
